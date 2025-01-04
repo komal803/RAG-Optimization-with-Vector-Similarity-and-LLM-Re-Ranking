@@ -20,11 +20,10 @@ This project introduces a hybrid approach to enhance Retrieval-Augmented Generat
    git clone https://github.com/yourusername/rag-optimization.git
    cd rag-optimization
  ```
+# Text Cleaning and Chunking
 
+The raw text is cleaned to remove unwanted characters, converted to lowercase, and split into overlapping chunks for further processing.
 
-## 1. Text Cleaning and Chunking  
-
-The raw text is cleaned to remove unwanted characters, converted to lowercase, and split into overlapping chunks for further processing.  
 ```python
 import re
 
@@ -42,7 +41,7 @@ list1 = []
 n = 100  # Chunk size
 for i in range(0, len(list_new) - n, n):
     if i == 0:
-        list1.append(" ".join(list_new[i:i+n]))
+        list1.append(" ".join(list_new[i:i + n]))
     else:
-        list1.append(" ".join(list_new[i-10:i+n]))
-   ```
+        list1.append(" ".join(list_new[i - 10:i + n]))
+ ```
