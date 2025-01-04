@@ -1,4 +1,4 @@
-# RAG-Optimization-with-Vector-Similarity-and-LLM-Re-Ranking
+# RAG Optimization with Vector Similarity and LLM-Re-Ranking
 
 
 ## Abstract  
