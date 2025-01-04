@@ -19,6 +19,7 @@ The hybrid methodology comprises the following steps:
 1. **Chunking Data**:  
    - Text data is divided into chunks of 50–100 tokens.  
    - Chunks are stored as a DataFrame for efficient processing.
+     ```
 import re
 
 def clean_text(text):
@@ -27,7 +28,7 @@ def clean_text(text):
     text = re.sub(r'[^\w\s]', "", text)  # Remove punctuation
     text = re.sub(r'\d+', "", text)      # Remove numbers
     return text
-
+```
 # Splitting the text into overlapping chunks
 text = "Your text data here"
 list_new = text.split(" ")
