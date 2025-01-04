@@ -19,15 +19,7 @@ The hybrid methodology comprises the following steps:
 1. **Chunking Data**:  
    - Text data is divided into chunks of 50–100 tokens.  
    - Chunks are stored as a DataFrame for efficient processing.
-# cleaned_text = clean_text(text)
-list_new = text.split(" ")
-list1 = []
-n = 100 #Chunk Size
-for i in range(0, len(list_new)-n,n):
-    if i == 0:
-        list1.append(" ".join(list_new[i:i+n]))
-    else:
-        list1.append(" ".join(list_new[i-10:i + n]))
+
 
 2. **Encoding and Similarity Calculation**:  
    - User queries and text chunks are encoded using **SBERT**.  
